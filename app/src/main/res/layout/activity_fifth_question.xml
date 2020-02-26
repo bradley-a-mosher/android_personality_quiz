@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fifth_question"
+    android:background="#99AC8C25">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/magnify"
+        android:layout_above="@id/question1C"/>
+
+    <TextView
+        android:id="@+id/question1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q5"/>
+
+    <RadioGroup
+        android:id="@+id/character_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question1C"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp">
+        <RadioButton
+            android:id="@+id/iron_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioC"
+            android:text="@string/fiction1"/>
+        <RadioButton
+            android:id="@+id/sherlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioC"
+            android:text="@string/fiction2"/>
+        <RadioButton
+            android:id="@+id/terminator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioC"
+            android:text="@string/fiction3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_group"
+        android:layout_marginLeft="20dp"
+        android:text="@string/previous"
+        android:onClick="onClickCharPrevButton"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_group"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSubmitCharacter"
+        android:text="@string/submit"/>
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_group"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/restart"
+        android:onClick="onClickCharReset"/>
+
+</RelativeLayout>

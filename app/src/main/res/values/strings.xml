@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PersonalityQuiz</string>
+    <string name="mainContent">Welcome to Nerd-o-Meter</string>
+    <string name="beginQuiz">Begin Quiz</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="restart">Restart</string>
+    <string name="q1"> 1) Which of these movies are your favorite?</string>
+    <string name="radioFilm1">Ghostbusters</string>
+    <string name="radioFilm2">The Dark Knight</string>
+    <string name="radioFilm3">Die Hard</string>
+    <string name="q2">2) Which of these bands could you see yourself listening to?</string>
+    <string name="music1">T-Pain</string>
+    <string name="music2">Weezer</string>
+    <string name="music3">Willie Nelson</string>
+    <string name="q3">3) Which of these is the best television show?</string>
+    <string name="tv1">Keeping Up With The Kardashians</string>
+    <string name="tv2">House</string>
+    <string name="tv3">The Simpsons</string>
+    <string name="q4">4) Which of the following hobbies below most interests you?</string>
+    <string name="hobby1">Reading</string>
+    <string name="hobby2">Lifting Weights</string>
+    <string name="hobby3">Hiking</string>
+    <string name="q5">5) If you could be any fictional character, who would you be?</string>
+    <string name="fiction1">Iron Man</string>
+    <string name="fiction2">Sherlock Holmes</string>
+    <string name="fiction3">The Terminator</string>
+</resources>

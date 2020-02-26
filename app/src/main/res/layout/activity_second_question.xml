@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second_question"
+    android:background="#99b19cd9">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/music"
+        android:layout_above="@id/question1R"/>
+
+    <TextView
+        android:id="@+id/question1R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q2"/>
+
+    <RadioGroup
+        android:id="@+id/music_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question1R"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp">
+        <RadioButton
+            android:id="@+id/tpain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioM"
+            android:text="@string/music1"/>
+        <RadioButton
+            android:id="@+id/weezer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioM"
+            android:text="@string/music2"/>
+        <RadioButton
+            android:id="@+id/willie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioM"
+            android:text="@string/music3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_group"
+        android:layout_marginLeft="20dp"
+        android:text="@string/previous"
+        android:onClick="onClickMusicPrevButton"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_group"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSubmitMusic"
+        android:text="@string/submit"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music_group"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/next"
+        android:onClick="onClickMusicNextButton"/>
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/restart"
+        android:onClick="onClickMusicReset"/>
+
+</RelativeLayout>

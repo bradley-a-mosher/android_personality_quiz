@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_question"
+    android:background="#99fff3ae">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popcorn"
+        android:layout_above="@id/question1F"/>
+
+    <TextView
+        android:id="@+id/question1F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_centerHorizontal="true"
+        android:text="@string/q1"/>
+
+    <RadioGroup
+        android:id="@+id/film_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question1F"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp">
+        <RadioButton
+            android:id="@+id/ghostbusters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClickRadio"
+            android:text="@string/radioFilm1"/>
+        <RadioButton
+            android:id="@+id/dark_knight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClickRadio"
+            android:text="@string/radioFilm2"/>
+        <RadioButton
+            android:id="@+id/die_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="onClickRadio"
+            android:text="@string/radioFilm3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_group"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSubmitFilm"
+        android:text="@string/submit"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_group"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/next"
+        android:onClick="onClickMovieNextButton"/>
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/film_group"
+        android:layout_marginLeft="20dp"
+        android:text="@string/restart"
+        android:onClick="onClickReset"/>
+
+</RelativeLayout>
